@@ -29,16 +29,28 @@ Variables y estructura lógica de la teoría músical
 
   1. Glosario:
     fromato: información | explicación
+    
     {} = contenedor de información | {1} se trata de un contenedor con el valor 1 | {1,2,3} se trata de un contenedor de un valor que puede ser 1, 2 o 3
+    
     [] = elemento de una lista | {[1],[2],[3]} se trata de un contenedor con 3 valores | {[1],[{1,2}]} se trata de un contenedor de dos valores: 1 y 1 o 2
+    
     () = agrupador visual: se utilzia para facilitar la lectura de datos
+    
     + - * / ^ ! = Suma, resta, multiplicación, división, potencia, raíz
-    varible: se trata del nombre de un contenedor de información, misma que es variable |
+    
+    varible: se trata del nombre de un contenedor de información
+    
     argumento:  se trata de la información contenida por un contenedor
+    
     || = El valor default de una variable
+    
     "..." Abreviatura para una serie se valores
+    
     // comentario
+    
     PE: Por ejemeplo
+
+
 
     Ejemplos:
     { [ ( [1], [1], [3], ) / 2 ], [1], [{x}] } se trata de un contenedor con tres valores: El primer valor es a su vez un contenedor de tres valores: 0.5, 0.5, 1.5.  El segundo valor es simplemente 1. El tercer valor es un contenedor con valor "x", que puede referirse a otro contenedor.
