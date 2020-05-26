@@ -23,11 +23,12 @@ Codificación de la teoría musical
     O = (F*F)/G [O= Octava, F= Fundamental, G=Grados]
   - Se pueden considerar tanto escalas logarítmicas como lineales para determinar la posición de los sonidos
   - La sintaxis que se utiliza en este documento es pseudocódigo libre
+  
 
-
-Variables y estructura lógica de la teoría músical
-
-  1. Glosario:
+  1. Variables y estructura lógica de la teoría musical
+  
+    Glosario:
+    
     fromato: información | explicación
     
     {} = contenedor de información | {1} se trata de un contenedor con el valor 1 | {1,2,3} se trata de un contenedor de un valor que puede ser 1, 2 o 3
@@ -58,7 +59,8 @@ Variables y estructura lógica de la teoría músical
 
 
   2. Variables y Argumentos
-  formato: variable = {argumento 1, argumento 2} || valor default de las variables | ejemplo
+    
+    formato: variable = {argumento 1, argumento 2} || valor default de las variables | ejemplo
 
     // Espectro audible
     eau = {[min],[max]}
