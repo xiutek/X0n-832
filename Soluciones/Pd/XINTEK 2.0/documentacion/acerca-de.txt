@@ -1,0 +1,41 @@
+			XINTEK 1.0
+
+			by Xiutec
+
+
+
+Es un sintetizador / sequenciador / procesador de efectos virtual 
+que puede ser controlado por cualquier aparato MIDI o Arduino,
+entre sus utilidades están:
+
+*Generar casi cualquier sonido imaginable.
+
+*Grabar lo que está sonando sin compresión ni perdida de calidad.
+
+*Procesar sonidos externos.
+
+*Cargar samples, procesarlos, modificarlos, etc.
+
+*Drummachine.
+
+*Presets.
+
+*Metrónomo integrado con Tap Tempo y efectos que responden al timepo.
+
+*Completamente modificable, personalizable, expandible.
+
+*Procesador de efectos visuales que responden al sonido.
+
+*Compatible con cualquier sistema operativo, computadora, celular, etc.
+
+Las posibilidades son infinitas.
+
+
+XINTEK será actualizado completamente una vez al año.
+Actualizaciones menores saldrán de vez en cuando.
+Si haz modificado XINTEK, por favor comparte tu versión
+para que tus modificaciones puedan incluirse.
+
+Dudas, comentarios: xiutek@gmail.com
+
+

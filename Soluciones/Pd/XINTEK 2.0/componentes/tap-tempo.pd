@@ -1,0 +1,38 @@
+#N canvas 675 239 465 371 10;
+#X obj 117 -20 key;
+#X floatatom 117 2 5 0 0 0 - - -;
+#X obj 117 183 sel 0;
+#X obj 160 183 sel 1;
+#X obj 117 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 160 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 117 226 timer;
+#X floatatom 117 248 5 0 0 0 - - -;
+#X obj 117 270 expr (60000./$f1);
+#X floatatom 162 113 5 0 0 0 - - -;
+#X text 198 116 bpm;
+#X obj 162 296 s ttempo;
+#X obj 40 312 s ttapdelay;
+#X obj 38 271 s avatartemp;
+#X obj 39 292 s tmetro;
+#X obj 117 108 tgl 25 0 empty empty empty 17 7 0 10 -4032 -1 -1 0 1
+;
+#X obj 117 24 sel 32;
+#X connect 0 0 1 0;
+#X connect 1 0 16 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 12 0;
+#X connect 7 0 13 0;
+#X connect 7 0 14 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 15 0 2 0;
+#X connect 15 0 3 0;
+#X connect 16 0 15 0;
+#X coords 0 -1 1 1 130 40 2 100 100;

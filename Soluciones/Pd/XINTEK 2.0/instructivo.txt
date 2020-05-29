@@ -1,0 +1,29 @@
+
+		     INSTRUCTIVO
+
+
+1. Instala Pure Data Extended, agrega los directorios
+/XINTEK 1.0, /arduino, /componentes, /externals y
+/Pduino-0.5 al Path en Pure Data (Menú Edit / Preferences).
+* SI NO INSTALAS Y CONFIGURAS PD ADECUADAMENTE NO PODRÁS 
+UTILIZAR XINTEK 1.0 *
+
+2. Configura en Pd tus controladores MIDI y el sonido.
+
+4. Lee todos los archivos de texto contenidos en el folder
+/documentacion 
+
+3. Ahora puedes abrir con Pd los archivos "X", "Y", y "Z"
+X: Sintetizador y estación de sonido, abre el archivo de texto
+"Controles" en /documentación para saber cómo utiilizarlo.
+Puedes utilizar el teclado de tu PC o un controlador MIDI.
+Y: Sequenciador y Looper.
+Z: Efectos visuales que responden al sonido.
+
+4. Realiza las modificaciones necesarias en los componentes
+para adecuar XINTEK 1.0 a tus aparatos.
+
+5. Comparte tu versión de XINTEK para ayudar mejorar
+este instrumento virtual.
+
+¿Dudas? xiutek@gmail.com

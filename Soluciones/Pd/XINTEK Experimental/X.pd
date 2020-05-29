@@ -1,0 +1,107 @@
+#N canvas 344 16 907 641 10;
+#X obj 0 -1 cnv 15 151 100 empty empty empty 20 12 0 14 -204800 -66577
+0;
+#X text 7 1 controles;
+#X obj 8 43 mono-key-ctl;
+#X obj 11 27 hsl 77 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4200 1;
+#X text 63 26 127;
+#X obj 50 43 notein;
+#N canvas 650 312 450 300 ctl-server 0;
+#X obj 28 26 inlet;
+#X obj 87 26 inlet;
+#X obj 147 29 inlet;
+#X obj 28 72 s ctls-1;
+#X obj 87 72 s ctls-2;
+#X obj 147 72 s ctls-3;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 5 0;
+#X restore 8 60 pd ctl-server;
+#X obj 0 99 excalar;
+#X obj 30 402 s~ veiderM;
+#X obj 372 261 s~ fmM;
+#X obj 362 81 r ctls-2;
+#X obj 229 261 s~ digiM;
+#X obj 650 81 r ctls-2;
+#X obj 0 421 cnv 15 610 190 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X obj 11 447 uni-delay;
+#X obj 245 438 flanger;
+#X obj 245 528 phaser;
+#X obj 447 447 uni-reverb;
+#X obj 41 402 r~ allsL;
+#X obj 189 401 r~ allsR;
+#X obj 245 400 r~ allsL;
+#X obj 298 400 r~ allsR;
+#X obj 340 510 r~ allsL;
+#X obj 393 510 r~ allsR;
+#X obj 447 401 r~ allsL;
+#X obj 545 401 r~ allsR;
+#X obj 11 616 s~ findelL;
+#X obj 177 616 s~ findelR;
+#X obj 245 508 s~ flangerM;
+#X obj 245 618 s~ phaserM;
+#X obj 447 616 s~ revL;
+#X obj 551 616 s~ revR;
+#X obj 98 38 r~ allFxL;
+#X obj 98 54 r~ allFxR;
+#X obj 372 119 two_ops1poly;
+#X obj 0 298 poderosa;
+#X obj 98 30 s-rec;
+#X text 110 9 REC;
+#X obj -1 260 cnv 15 901 36 empty empty empty 20 12 0 14 -13330 -66577
+0;
+#X obj 229 99 cnv 15 473 18 empty empty empty 20 12 0 14 -13330 -66577
+0;
+#X obj -1 399 cnv 15 612 22 empty empty empty 20 12 0 14 -13330 -66577
+0;
+#X obj 703 -1 cnv 15 198 260 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X obj 733 48 metronomo;
+#X obj 733 8 tap-tempo;
+#X obj 720 134 presets;
+#X obj 611 399 cnv 15 289 212 empty empty empty 20 12 0 14 -191407
+-66577 0;
+#X text 657 420 stop data: (') start data (¿);
+#X obj 630 437 sound-server;
+#X obj 1 612 cnv 15 899 25 empty empty empty 20 12 0 14 -13330 -66577
+0;
+#X obj 229 81 r ctls-1;
+#X obj 229 119 digitalik;
+#X obj 199 16 mega-server;
+#X obj 202 43 MEGA-SPLITER;
+#X obj 1 279 r ctls-1;
+#X connect 2 0 6 0;
+#X connect 2 1 6 1;
+#X connect 3 0 2 0;
+#X connect 5 0 6 0;
+#X connect 5 1 6 1;
+#X connect 10 0 50 1;
+#X connect 12 0 34 1;
+#X connect 14 0 26 0;
+#X connect 14 1 27 0;
+#X connect 15 0 28 0;
+#X connect 16 0 29 0;
+#X connect 17 0 30 0;
+#X connect 17 1 31 0;
+#X connect 18 0 14 0;
+#X connect 19 0 14 1;
+#X connect 20 0 15 0;
+#X connect 21 0 15 0;
+#X connect 22 0 16 0;
+#X connect 23 0 16 0;
+#X connect 24 0 17 0;
+#X connect 25 0 17 6;
+#X connect 32 0 36 0;
+#X connect 33 0 36 1;
+#X connect 34 0 9 0;
+#X connect 35 0 8 0;
+#X connect 49 0 34 0;
+#X connect 49 0 50 0;
+#X connect 50 0 11 0;
+#X connect 53 0 35 1;
+#X connect 53 0 35 10;
+#X connect 53 0 35 3;
+#X connect 53 0 35 8;
+#X connect 53 0 35 7;

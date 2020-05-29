@@ -1,0 +1,1 @@
+sample "C:/Users/xiute/Desktop/selfish.wav", amp: 5, finish: 0.3

@@ -1,0 +1,40 @@
+#N canvas 65 87 877 523 10;
+#X floatatom 70 172 5 0 0 0 - - -;
+#X obj 87 247 +;
+#X obj 127 147 random 2;
+#X obj 127 171 sel 0;
+#X obj 167 171 sel 1;
+#X msg 55 248 0;
+#X floatatom 87 275 5 0 0 0 - - -;
+#X obj 127 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 127 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 147 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 72 302 +;
+#X obj 127 97 metro 1000;
+#X obj 127 77 loadbang;
+#X obj 70 147 inlet;
+#X obj 202 142 inlet;
+#X obj 72 332 outlet;
+#X msg 127 225 5;
+#X msg 147 225 0;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 2 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 1;
+#X connect 7 0 2 0;
+#X connect 8 0 16 0;
+#X connect 9 0 17 0;
+#X connect 10 0 15 0;
+#X connect 11 0 7 0;
+#X connect 12 0 11 0;
+#X connect 13 0 0 0;
+#X connect 14 0 5 0;
+#X connect 16 0 1 1;
+#X connect 17 0 1 1;

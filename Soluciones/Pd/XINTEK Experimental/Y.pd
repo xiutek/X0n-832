@@ -1,0 +1,3 @@
+#N canvas 617 57 591 475 10;
+#X obj 241 2 sequ;
+#X obj -2 2 lupe;

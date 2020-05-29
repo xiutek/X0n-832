@@ -1,0 +1,14 @@
+#N canvas 0 0 450 300 10;
+#X obj 129 133 comport 6 9600;
+#X obj 129 160 repack 12;
+#X obj 129 190 unpack f f f f f f f f f f f f;
+#X floatatom 99 226 5 0 0 0 - - -;
+#X floatatom 141 246 5 0 0 0 - - -;
+#X floatatom 200 255 5 0 0 0 - - -;
+#X floatatom 253 254 5 0 0 0 - - -;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 2 2 5 0;
+#X connect 2 3 6 0;

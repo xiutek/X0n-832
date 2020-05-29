@@ -1,0 +1,54 @@
+--- Controles definitivos para "X" ---
+
+*No utilizar bloqueo de mayúsculas
+
+*Los controles fueron denominados con
+el número de tecla, no con su nombre
+(ver ayuda del objeto "key" en Pd)
+por tal motivo no serán los mismos en
+cualquier PC que no sea Lenovo G50-45
+con telcado LAA. Ajusta los controles
+a tu computadora o utiliza el objeto
+"key name".
+
+*Si tienes problemas haciendo sonar
+tu instrumento midi, oprime cualquier
+tecla de las Notas y ya sonará tu
+controlador.
+
+
+Notas: 0 1 2 3 4 5 6 7 8 9 10 11
+       A W S E D F T G Y H  U  J
+
+Octava arriba: Q
+Octava abajo: Z
+Centrar / Set: X
+Tono +1: C
+Detener midi y sonido sin Fx: (')
+Activar los datos midi: (¿)
+Pánico: °
+
+Tap tempo: (Spacebar)
+
+Metrónomo: M
+
+Grabar a memoria temporal: 
+Start = (,) Stop = (.) 
+
+
+--- Controles definitivos para "Y" ---
+
+Sampleo:
+	Reset: 1
+	Stop: 2
+	Inicio: 3
+	Cargar de memoria temporal: (-)
+	Cargar de archivo: Ñ
+
+Sequence: (Declarados en el patch)
+
+
+
+
+
+

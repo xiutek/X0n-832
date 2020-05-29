@@ -1,0 +1,59 @@
+#N canvas 324 261 2824 1447 24;
+#X obj 893 131 tabwrite~ \$0-oscope;
+#X obj 1108 37 metro 100;
+#X obj 824 21 tgl 15 1 empty empty empty 170 70 0 100 -262144 -1 -1
+1 1;
+#N canvas 0 0 450 271 (subpatch) 0;
+#X array \$0-oscope 3429 float 4;
+#X coords 0 1 3428 -1 500 500 2 0 0;
+#X restore 339 43 graph;
+#X msg 336 682 resize \$1;
+#X obj 336 718 s \$0-oscope;
+#X obj 339 554 hsl 500 100 44 4400 1 0 empty empty empty -2 -8 0 10
+-208051 -1 -1 0 1;
+#X text 780 13 i/o;
+#X text 899 208 Esta parte del código activa el dibujo de la onda
+cada 100ms;
+#X obj 37 84 vsl 100 500 0 20000 0 0 empty empty empty 0 -9 0 10 -204800
+-1 -1 0 1;
+#X floatatom 36 597 7 0 0 0 - - -;
+#X obj 187 82 vsl 100 500 0 1 0 0 empty empty empty 0 -9 0 10 -204786
+-1 -1 0 1;
+#X floatatom 186 594 5 0 0 0 - - -;
+#X text 38 36 Frecuencia / Amplitud;
+#X obj 35 758 *~;
+#X text 118 600 Hz;
+#X text 222 810 Hz;
+#X obj 184 695 * 140;
+#X floatatom 187 634 5 0 0 0 - - -;
+#X text 254 597 Vol;
+#X text 259 637 dB;
+#X obj 24 817 dac~;
+#X text 477 618 Velocidad de la Muestra;
+#X text 521 50 Onda Sonora;
+#X text 13 860 Esta sección genera ona onda sinusoide;
+#X text 13 895 La barra azul envía números del 0 al 20 \, 0;
+#X text 13 933 La barra verde envía números del 0 al 1;
+#X obj 36 705 osc~;
+#X text 14 970 El objeto |osc~| genera una onda sinusoide \, atribuye
+el número que genera la barra azul a "frecuencia".;
+#X text 15 1026 El objeto |*~| multiplica la señal de |osc~| por el
+número que genera la barra azul \, "amplificandolo".;
+#X text 18 1084 El objeto |dac~| transforma estos datos de onda sonora
+con frecuencia y amplitud en una señal eléctrica que tus auriculares
+o bocinas reproducen.;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;
+#X connect 9 0 10 0;
+#X connect 10 0 27 0;
+#X connect 11 0 12 0;
+#X connect 12 0 17 0;
+#X connect 12 0 14 1;
+#X connect 14 0 21 0;
+#X connect 14 0 21 1;
+#X connect 14 0 0 0;
+#X connect 17 0 18 0;
+#X connect 27 0 14 0;
+#X coords 0 0 1 1 850 660 2 10 10;

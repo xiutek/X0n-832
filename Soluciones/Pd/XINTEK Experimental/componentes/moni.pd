@@ -1,0 +1,88 @@
+#N canvas 542 16 1047 620 10;
+#X obj 610 131 route analog digital;
+#X obj 530 148 route 7;
+#X obj 530 169 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 593 155 route 0 1 2 3 4 5 6 7;
+#X floatatom 593 187 5 0 0 0 - - -;
+#X floatatom 608 209 5 0 0 0 - - -;
+#X floatatom 623 230 5 0 0 0 - - -;
+#X floatatom 639 252 5 0 0 0 - - -;
+#X floatatom 654 280 5 0 0 0 - - -;
+#X floatatom 669 302 5 0 0 0 - - -;
+#X obj 654 350 s luz1;
+#X obj 669 380 s luz2;
+#X obj 623 428 s joyxram;
+#X obj 639 405 s joyyram;
+#X obj 174 41 r volram;
+#X obj 115 117 cnv 15 170 70 empty empty empty 20 12 0 14 -231872 -66577
+0;
+#X obj 136 127 knob 25 25 0 1 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 174 127 knob 25 25 0 1 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X floatatom 174 163 5 0 0 0 - - -;
+#X floatatom 136 163 5 0 0 0 - - -;
+#X obj 220 126 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 220 146 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 257 165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 136 3 * 127;
+#X obj 136 -20 inber;
+#X obj 136 -41 r luz1;
+#X obj 174 3 * 127;
+#X obj 174 -20 inber;
+#X obj 174 -41 r luz2;
+#X obj 27 13 r joyyram;
+#X obj 347 -10 r joyxram;
+#X obj 593 478 s modram;
+#X obj 608 453 s volram;
+#X obj 136 67 r modram;
+#X obj 530 192 s joybam;
+#X text 119 241 mod \, vol \, l1 \, l2 \, x \, y \, b;
+#X obj 57 207 s mpm1;
+#X obj 100 207 s mpm2;
+#X obj 142 207 s mluz1;
+#X obj 192 207 s mluz2;
+#X obj 240 207 s mjoyx;
+#X obj 288 207 s mjoyy;
+#X obj 336 207 s mjoyb;
+#X obj 610 102 arduino 1;
+#X connect 0 0 3 0;
+#X connect 0 1 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 22 0;
+#X connect 2 0 34 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 2 6 0;
+#X connect 3 3 7 0;
+#X connect 3 4 8 0;
+#X connect 3 5 9 0;
+#X connect 4 0 31 0;
+#X connect 5 0 32 0;
+#X connect 6 0 12 0;
+#X connect 7 0 13 0;
+#X connect 8 0 10 0;
+#X connect 9 0 11 0;
+#X connect 14 0 17 0;
+#X connect 16 0 36 0;
+#X connect 17 0 37 0;
+#X connect 18 0 39 0;
+#X connect 19 0 38 0;
+#X connect 20 0 40 0;
+#X connect 21 0 41 0;
+#X connect 22 0 42 0;
+#X connect 23 0 19 0;
+#X connect 24 0 23 0;
+#X connect 25 0 24 0;
+#X connect 26 0 18 0;
+#X connect 27 0 26 0;
+#X connect 28 0 27 0;
+#X connect 29 0 21 0;
+#X connect 30 0 20 0;
+#X connect 33 0 16 0;
+#X connect 43 0 0 0;
+#X coords 0 -1 1 1 200 100 1 100 100;

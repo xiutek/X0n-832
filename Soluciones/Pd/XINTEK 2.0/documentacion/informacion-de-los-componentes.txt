@@ -1,0 +1,88 @@
+Archivos maestros:
+
+[X]
+
+Sintetizador polifónico, formado por un generador de ondas simple [digitalik], un sintetizador fm
+de dos osciladores [two_ops1p] y un sintetizador AM con muchas modulaciones en anillo [poderosa].
+El el cuadro de controles se encuentra el servidor MIDI conectado al notein y al teclado, la velocidad
+midi del teclado se ajusta con el slider, el boton REC parpadea cuando se está llevando a cabo una
+grabación, a la izquierda está el control midi de akai-mpk25 y moni (un arduino con fotosensores, 
+potenciómetro y joystick). El cuadro gris de la derecha contiene el tap-tempo, bpm, metrónomo
+(on/off, sonido/mute y vol) y los presets (primero los generales, luego digitalik, two_ops1p y poderosa)
+En la segunda fila comenzando por la izquierda está el escalador, que sirve para definir una escala
+para el teclado del PC y para Moni, los siguientes cuadros son digitalik y two_ops1p. Abajo de ellos
+se encuentra poderosa. En la última fila están los efectos: delay, flanger, phaser y reverb.
+En la esquina inferior derecha se encuentra el servidor de sonido, donde se ajusta la cantidad de sonido
+sin procesar por efectos, con efectos y finalmente una barra de botones que permite elegir el sintetizador
+y los efectos.
+
+[Y]
+
+Primer componente es lupe, permite cargar el sonido directo de la memoria temporal (lo que acabas de grabar)
+o de un archivo, permite modificar el volumen, la velocidad, poner un trémolo, modulación en anillo y un bit crush.
+El segundo componente es un external (no lo armé yo, sólo lo modifiqué) que permite cargar un archivo de sonido
+y reproducir solo ciertas secciones de él, así como cambiar entre secciones.
+
+[Z]
+
+Procesador de efectos visuales que responden al sonido, controlabe con instrumentos MIDI y taptempo independiente.
+
+
+
+
+Información de los componentes:
+
+- - - - - - - - - - - - - -
+
+[mono-key-ctl]
+
+Controlador midi de teclado transportable de una sola nota a la vez. Originalmente hecho en lenovo g50 45.
+Utiliza [eskalar] para transportar la escala cromática en la cual está construído. (Es decir, primero se
+tiene que definir una escala con eskalar).
+
+Inlets: Velocidad
+Outlets: Nota midi, velocidad
+
+Utiliza: [excalar]
+
+- - - - - - - - - - - - - -
+
+[akai-mpk25]
+
+Interfase para Pd del controlador midi Akai MPK25.
+La información puede ser recibida por otros objetos así:
+Pitch [r apitch], Mod [r amod], Pads [r apadX] (1-9), Knobs [r kbXY],
+donde X es el no. de perilla (1-12) y Y el canal (a,b).
+
+- - - - - - - - - - - - - -
+
+[moni]
+
+Interfase para Pd de "Ramona" controlador hecho con Arduino con 2 potenciometros, 1 joystick y 2 fotoresistencias.
+El puerto por defaut de Arduino es 3, los datos pueden ser recibidos así:
+
+Potenciómetros: [r mpm1] (mod), [r mpm2] (vol)
+Fotoresistencias: [r mluz1], [r mluz1] (datos en midi, 0-127)
+Joystick: [r mjoyx] [r mjoyy] [r mjoyb] (x, y y botón)
+
+Utiliza: [inber], un simpre inversor para las fotoresistencias.
+
+- - - - - - - - - - - - - -
+
+[excalar]
+
+Crea escalas de 7 notas, primero se debe definir el modo, luego la transportación y finalmente centrarla u octavarla.
+Las notas de la escala pueden ser recividas como [r escalaX] donde X es el grado de la escala (1-7).
+Es controlado con el teclado (ver documento de controles).
+
+- - - - - - - - - - - - - -
+
+EXTERNALS:
+
+No escritos por mi:
+
+[abs_fm_op1]
+[two_ops1poly]
+
+
+Se completará la información en este documento con la próxima actualización.
